@@ -1,5 +1,102 @@
 body {
-  margin: 0;
+  color: white;
+}
+
+.container-custom {
+  width: 100%;
+}
+
+h1,
+span,
+blockquote {
+  color: white;
+}
+
+.txt-purple {
+  color: #e31b6d;
+}
+
+.btn {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #06c2c9;
+}
+
+.arrow-anim {
+  transition: transform 0.5s;
+}
+
+.btn:hover > .arrow-anim {
+  transform: rotate(90deg);
+}
+
+.nav-bg {
+  background-color: #06c2c9;
+  height: 80px;
+}
+
+nav {
+  background-color: #1b242f;
+}
+
+.navbar .navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 !important;
+}
+
+.bg-dark {
+  background-color: #1b242f;
+}
+
+.h-testing {
+  height: 2000px;
+  background-color: white;
+  color: black;
+}
+
+.border-test {
+  border-bottom: 3px solid #04c2c9;
+}
+
+.navbar-toggler {
+  text-decoration: none;
+}
+
+.mt-b-50 {
+  margin: 5rem 0;
+}
+
+.line-test {
+  width: 80px;
+  height: 5px;
+}
+
+.z-index {
+  z-index: 10000;
+}
+
+.hexa-img {
+  width: 100px;
+  height: 100px;
+}
+
+.flex-basis {
+  flex: 25%;
+}
+
+.icons-deco {
+  height: 50px;
+  width: 50px;
+}
+
+.m-l-r {
+  margin: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
