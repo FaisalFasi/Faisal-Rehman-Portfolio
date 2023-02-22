@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: white;
 }
 
 .container-custom {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 h1,
@@ -82,21 +88,49 @@ nav {
 }
 
 .hexa-img {
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
 }
 
 .flex-basis {
   flex: 25%;
 }
 
-.icons-deco {
-  height: 50px;
-  width: 50px;
+.icons-abt {
+  top: 18%;
+  right: 1%;
 }
 
-.m-l-r {
-  margin: 0 20px;
+.my-image {
+  width: 250px;
+  height: 250px;
+}
+
+.theme-color {
+  background-color: #06c2c9;
+  color: white;
+}
+
+.bar-filler {
+  background-color: #00a1a7;
+}
+
+.bar-percentage-deco {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: auto;
+}
+
+.bar-text {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-height {
+  height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
