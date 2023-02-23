@@ -133,4 +133,28 @@ nav {
   height: 25px;
 }
 
+.footer-color {
+  background-color: #1b242f;
+}
+
+.footer-icon-div {
+  width: 50px;
+  height: 50px;
+  background-color: #262f38;
+}
+
+.footer-txt-color {
+  color: #8f9aa7;
+}
+
+.arrow-btn {
+  width: 50px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  top: -20px;
+  margin: auto;
+  background-color: #e31b6d;
+}
+
 /*# sourceMappingURL=style.css.map */
