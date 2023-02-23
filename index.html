@@ -18,7 +18,7 @@
   <body>
     <!--*   "Home"  Section 1  -->
     <section>
-      <div class="">
+      <div class="" id="home">
         <img
           src="./images/filler.png"
           alt="background filler image"
@@ -33,10 +33,13 @@
             <span class="txt-purple fw-bolder"> Faisal Rehman</span>.
           </h1>
           <h1 class="display-5">I'm a front-end web developer.</h1>
-          <button class="btn rounded-0 px-3 py-2 fs-5 fw-light mt-3">
-            View my work
-            <i class="fa-solid fa-arrow-right mx-3 py-2 arrow-anim"></i>
-          </button>
+          <a href="#about">
+            <button class="btn rounded-0 px-3 py-2 fs-5 fw-light mt-3">
+              View my work
+              <i
+                class="fa-solid fa-arrow-right mx-3 py-2 arrow-anim"
+              ></i></button
+          ></a>
         </div>
       </div>
     </section>
@@ -59,18 +62,24 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link px-4 txt-purple" href="#">Home</a>
-            <a class="nav-link px-4 text-white" href="#">About</a>
-            <a class="nav-link px-4 text-white" href="#">Portfolio</a>
-            <a class="nav-link px-4 text-white" href="#">Contact</a>
+            <a class="nav-link px-4 a-style" href="#about">About</a>
+            <a class="nav-link px-4 a-style" href="#">Portfolio</a>
+            <a class="nav-link px-4 a-style" href="#_footer">Contact</a>
+            <a
+              class="nav-link px-4 a-style"
+              href="cv/CV+-+Faisal+Rehman-react.pdf"
+              download="Faisal-Rehman-CV"
+              >Download CV</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
     <!--*   " About"  Section 3  -->
-    <div class="container-custom">
+    <div class="container-custom" id="about">
       <div class="d-grid text-center">
-        <div class="col-12 my-5">
+        <div class="col-12 m-about">
           <h1 class="text-black">About</h1>
           <div class="line-test bg-black m-auto"></div>
         </div>
@@ -97,8 +106,12 @@
           >
             <img src="./images/hexa.png" alt="" class="hexa-img m-2" />
             <i
-              class="fa fa-thin fa-gauge-simple-high position-absolute fa-3x text-white"
+              class="fa fa-thin fa-computer position-absolute fa-3x text-white"
             ></i>
+
+            <!-- <i
+              class="fa-regular fa-lightbulb-on position-absolute fa-3x text-white"
+            ></i> -->
           </div>
           <h3>Responsive</h3>
           <p>My layouts will work on any device, big or small.</p>
@@ -110,7 +123,7 @@
           >
             <img src="./images/hexa.png" alt="" class="hexa-img m-2" />
             <i
-              class="fa fa-thin fa-gauge-simple-high position-absolute fa-3x text-white"
+              class="fa-sharp fa-regular fa-lightbulb position-absolute fa-3x text-white"
             ></i>
           </div>
           <h3>Intuitive</h3>
@@ -123,7 +136,7 @@
           >
             <img src="./images/hexa.png" alt="" class="hexa-img m-2" />
             <i
-              class="fa fa-thin fa-gauge-simple-high position-absolute fa-3x text-white"
+              class="fa-solid fa-rocket position-absolute fa-3x text-white"
             ></i>
           </div>
           <h3>Dynamic</h3>
@@ -255,40 +268,53 @@
     <!--*   " About"  Section end here -->
 
     <!--*   " Footer"  Section 4 start here -->
-    <div class="container-fluid footer-color p-5 position-relative">
+    <div
+      class="container-fluid footer-color p-5 position-relative"
+      id="_footer"
+    >
       <div class="row justify-content-center">
-        <div
-          class="footer-icon-div d-flex justify-content-center align-items-center my-5 mx-3"
+        <a
+          href="https://www.linkedin.com/in/faisalrehman18/"
+          target="_blank"
+          class="footer-icon d-flex justify-content-center align-items-center mt-5 mb-2 mx-3"
         >
-          <i class="fa-brands fa-linkedin-in fa-xl"></i>
-        </div>
-        <div
-          class="footer-icon-div d-flex justify-content-center align-items-center my-5 mx-3"
+          <i class="fa-brands fa-linkedin-in fa-lg"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/faisalfasi18"
+          target="_blank"
+          class="footer-icon d-flex justify-content-center align-items-center mt-5 mb-2 mx-3"
         >
-          <i class="fa-brands fa-facebook-f fa-xl"></i>
-        </div>
-        <div
-          class="footer-icon-div d-flex justify-content-center align-items-center my-5 mx-3"
+          <i class="fa-brands fa-facebook-f fa-lg"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/faisalfasi18/"
+          target="_blank"
+          class="footer-icon d-flex justify-content-center align-items-center mt-5 mb-2 mx-3"
         >
-          <i class="fa-brands fa-instagram fa-xl"></i>
-        </div>
-        <div
-          class="footer-icon-div d-flex justify-content-center align-items-center my-5 mx-3"
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </a>
+        <a
+          href="https://github.com/FaisalFasi"
+          target="_blank"
+          class="footer-icon d-flex justify-content-center align-items-center mt-5 mb-2 mx-3"
         >
-          <i class="fa-brands fa-github fa-xl"></i>
-        </div>
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
       </div>
       <!-- foot note -->
-      <div class="row text-center">
+      <div class="row text-center mt-4">
         <p class="footer-txt-color">
           FAISAL REHMAN <span class="txt-purple"> ©2022</span>
         </p>
       </div>
-      <div
-        class="arrow-btn position-absolute d-flex align-items-center justify-content-center"
-      >
-        <i class="fa-solid fa-angles-up fa-xl"></i>
-      </div>
+      <a href="#home">
+        <div
+          class="arrow-btn position-absolute d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-angles-up fa-xl"></i>
+        </div>
+      </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

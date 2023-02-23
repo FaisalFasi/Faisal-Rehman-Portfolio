@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
 }
@@ -27,8 +31,10 @@ blockquote {
   color: white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #06c2c9;
+  color: white;
 }
 
 .arrow-anim {
@@ -48,6 +54,14 @@ nav {
   background-color: #1b242f;
 }
 
+.navbar-nav a:not(:first-child) {
+  color: white;
+}
+
+.navbar-nav a:hover {
+  color: #e31b6d;
+}
+
 .navbar .navbar-toggler {
   border-color: transparent !important;
 }
@@ -60,22 +74,12 @@ nav {
   background-color: #1b242f;
 }
 
-.h-testing {
-  height: 2000px;
-  background-color: white;
-  color: black;
-}
-
 .border-test {
-  border-bottom: 3px solid #04c2c9;
+  border-bottom: 3px solid #06c2c9;
 }
 
 .navbar-toggler {
   text-decoration: none;
-}
-
-.mt-b-50 {
-  margin: 5rem 0;
 }
 
 .line-test {
@@ -94,6 +98,10 @@ nav {
 
 .flex-basis {
   flex: 25%;
+}
+
+.m-about {
+  margin: 80px 0px 60px 0px;
 }
 
 .icons-abt {
@@ -137,10 +145,25 @@ nav {
   background-color: #1b242f;
 }
 
-.footer-icon-div {
+.footer-icon {
   width: 50px;
   height: 50px;
   background-color: #262f38;
+  color: white;
+}
+
+.footer-icon:hover {
+  background-color: #06c2c9;
+  color: white;
+}
+
+.footer-color a {
+  text-decoration: none;
+}
+
+.footer-color i {
+  color: white;
+  opacity: 1.2;
 }
 
 .footer-txt-color {
@@ -155,6 +178,16 @@ nav {
   top: -20px;
   margin: auto;
   background-color: #e31b6d;
+  color: white;
+}
+
+.arrow-btn:hover {
+  transition: background-color 1s;
+  filter: brightness(1.2);
+}
+
+.h-inherit {
+  height: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

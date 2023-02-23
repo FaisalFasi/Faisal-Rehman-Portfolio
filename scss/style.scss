@@ -1,9 +1,15 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  color: white;
+  color: v.$text-color-white;
 }
 .container-custom {
   width: 80%;
@@ -12,22 +18,20 @@ body {
 h1,
 span,
 blockquote {
-  color: white;
-}
-
-.banner img {
-  // height: 100vh;
+  color: v.$text-color-white;
 }
 
 .txt-purple {
-  color: #e31b6d;
+  color: v.$text-color-theme;
 }
 .btn {
-  border: 2px solid white;
-  color: white;
+  border: 2px solid v.$text-color-white;
+  color: v.$text-color-white;
 }
-.btn:hover {
-  background-color: #06c2c9;
+.btn:hover,
+.btn:focus {
+  background-color: v.$background-color-theme;
+  color: v.$text-color-white;
 }
 
 .arrow-anim {
@@ -39,12 +43,19 @@ blockquote {
 }
 
 .nav-bg {
-  background-color: #06c2c9;
+  background-color: v.$background-color-theme;
   height: 80px;
 }
 
 nav {
-  background-color: #1b242f;
+  background-color: v.$background-dark;
+}
+
+.navbar-nav a:not(:first-child) {
+  color: v.$text-color-white;
+}
+.navbar-nav a:hover {
+  color: v.$text-color-theme;
 }
 
 .navbar .navbar-toggler {
@@ -55,21 +66,13 @@ nav {
 }
 
 .bg-dark {
-  background-color: #1b242f;
-}
-.h-testing {
-  height: 2000px;
-  background-color: white;
-  color: black;
+  background-color: v.$background-dark;
 }
 .border-test {
-  border-bottom: 3px solid #04c2c9;
+  border-bottom: 3px solid v.$background-color-theme;
 }
 .navbar-toggler {
   text-decoration: none;
-}
-.mt-b-50 {
-  margin: 5rem 0;
 }
 .line-test {
   width: 80px;
@@ -86,6 +89,9 @@ nav {
 .flex-basis {
   flex: 25%;
 }
+.m-about {
+  margin: 80px 0px 60px 0px;
+}
 .icons-abt {
   top: 18%;
   right: 1%;
@@ -100,7 +106,7 @@ nav {
   color: white;
 }
 .bar-filler {
-  background-color: #00a1a7;
+  background-color: v.$background-color-darktheme;
 }
 .bar-percentage-deco {
   display: flex;
@@ -120,15 +126,28 @@ nav {
 
 // footer classes here
 .footer-color {
-  background-color: #1b242f;
+  background-color: v.$background-dark;
 }
-.footer-icon-div {
+.footer-icon {
   width: 50px;
   height: 50px;
-  background-color: #262f38;
+  background-color: v.$background-icon-dark;
+  color: v.$text-color-white;
+}
+
+.footer-icon:hover {
+  background-color: v.$background-color-theme;
+  color: v.$text-color-white;
+}
+.footer-color a {
+  text-decoration: none;
+}
+.footer-color i {
+  color: v.$text-color-white;
+  opacity: 1.2;
 }
 .footer-txt-color {
-  color: #8f9aa7;
+  color: v.$text-color-light;
 }
 .arrow-btn {
   width: 50px;
@@ -137,35 +156,14 @@ nav {
   right: 0;
   top: -20px;
   margin: auto;
-  background-color: #e31b6d;
+  background-color: v.$background-dark-theme;
+  color: v.$text-color-white;
 }
+.arrow-btn:hover {
+  transition: background-color 1s;
 
-// .hex:before {
-//   content: " ";
-//   width: 0;
-//   height: 0;
-//   border-bottom: 30px solid #06c2c9;
-//   border-left: 52px solid transparent;
-//   border-right: 52px solid transparent;
-//   position: absolute;
-//   top: -30px;
-// }
-
-// .hex {
-//   margin-top: 30px;
-//   width: 104px;
-//   height: 60px;
-//   background-color: #06c2c9;
-//   position: relative;
-//   transform: rotate(90deg);
-// }
-
-// .hex:after {
-//   content: "";
-//   width: 0;
-//   position: absolute;
-//   bottom: -30px;
-//   border-top: 30px solid #06c2c9;
-//   border-left: 52px solid transparent;
-//   border-right: 52px solid transparent;
-// }
+  filter: brightness(1.2);
+}
+.h-inherit {
+  height: inherit;
+}
