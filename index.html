@@ -9,10 +9,16 @@
       rel="stylesheet"
     />
     <title>FR-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/logo/logo-5.png" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Zeyada&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -28,9 +34,9 @@
         <div
           class="position-absolute top-50 start-50 translate-middle text-center fs-1 lh-1 w-100"
         >
-          <h1 class="display-5">
+          <h1 class="Heading-base">
             Hello, I'm
-            <span class="txt-purple fw-bolder"> Faisal Rehman</span>.
+            <span class="txt-purple fw-semibold"> Faisal Rehman</span>.
           </h1>
           <h1 class="display-5">I'm a front-end web developer.</h1>
           <a href="#about">
@@ -43,10 +49,17 @@
         </div>
       </div>
     </section>
+
+    <!-- navbar closed code -->
+
     <!--*   "Nav Bar"  Section 2  -->
 
     <nav class="navbar navbar-expand-md border-test sticky-top">
-      <div class="container-fluid justify-content-end bg-dark">
+      <div class="container-fluid bg-dark">
+        <a class="navbar-brand" href=""
+          ><img src="./logo/logo-5.png" alt="" height="30px"
+        /></a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -61,12 +74,12 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link px-4 txt-purple" href="#">Home</a>
-            <a class="nav-link px-4 a-style" href="#about">About</a>
-            <a class="nav-link px-4 a-style" href="#">Portfolio</a>
-            <a class="nav-link px-4 a-style" href="#_footer">Contact</a>
+            <a class="nav-link px-4" href="#">Home</a>
+            <a class="nav-link px-4" href="#about">About</a>
+            <a class="nav-link px-4" href="#">Portfolio</a>
+            <a class="nav-link px-4" href="#_footer">Contact</a>
             <a
-              class="nav-link px-4 a-style"
+              class="nav-link px-4"
               href="cv/CV+-+Faisal+Rehman-react.pdf"
               download="Faisal-Rehman-CV"
               >Download CV</a
@@ -80,8 +93,8 @@
     <div class="container-custom" id="about">
       <div class="d-grid text-center">
         <div class="col-12 m-about">
-          <h1 class="text-black">About</h1>
-          <div class="line-test bg-black m-auto"></div>
+          <h1 class="Heading-small fw-bolder text-black">ABOUT</h1>
+          <div class="about-below-line m-auto"></div>
         </div>
       </div>
       <!-- --------      icon and images ---------- -->
@@ -96,7 +109,7 @@
               class="fa fa-thin fa-gauge-simple-high position-absolute fa-3x text-white"
             ></i>
           </div>
-          <h3>Fast</h3>
+          <h3 class="p-heading-size fw-semibold">Fast</h3>
           <p>Fast load times and lag free interaction, my highest priority.</p>
         </div>
         <!-- icon 2 -->
@@ -113,7 +126,7 @@
               class="fa-regular fa-lightbulb-on position-absolute fa-3x text-white"
             ></i> -->
           </div>
-          <h3>Responsive</h3>
+          <h3 class="p-heading-size fw-semibold">Responsive</h3>
           <p>My layouts will work on any device, big or small.</p>
         </div>
         <!-- icon 3 -->
@@ -126,7 +139,7 @@
               class="fa-sharp fa-regular fa-lightbulb position-absolute fa-3x text-white"
             ></i>
           </div>
-          <h3>Intuitive</h3>
+          <h3 class="p-heading-size fw-semibold">Intuitive</h3>
           <p>Strong preference for easy to use, intuitive UX/UI.</p>
         </div>
         <!-- icon 4 -->
@@ -139,7 +152,7 @@
               class="fa-solid fa-rocket position-absolute fa-3x text-white"
             ></i>
           </div>
-          <h3>Dynamic</h3>
+          <h3 class="p-heading-size fw-semibold">Dynamic</h3>
           <p>
             Websites don't have to be static, I love making pages come to life.
           </p>
@@ -158,7 +171,7 @@
               class="my-image m-2 position-relative"
             />
 
-            <h3 class="my-2">Who's this guy?</h3>
+            <h3 class="my-2 p-heading-size fw-semibold">Who's this guy?</h3>
             <p>
               I'm a Front-End Developer in
               <span class="text-info d-inline m-0"> Berlin, DE.</span>

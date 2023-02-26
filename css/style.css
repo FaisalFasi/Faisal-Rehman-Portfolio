@@ -9,11 +9,26 @@ html {
 
 body {
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 .container-custom {
   width: 80%;
   margin: auto;
+}
+
+.Heading-base {
+  font-size: 32pt !important;
+}
+
+.Heading-small {
+  font-size: 30px !important;
+  color: #444649 !important;
+}
+
+.p-heading-size {
+  font-size: 18pt !important;
+  color: #616161 !important;
 }
 
 h1,
@@ -45,6 +60,25 @@ blockquote {
   transform: rotate(90deg);
 }
 
+.navbar {
+  /*   z-index should be above .close-navbar-toggler */
+  z-index: 2;
+}
+
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+
 .nav-bg {
   background-color: #06c2c9;
   height: 80px;
@@ -54,7 +88,11 @@ nav {
   background-color: #1b242f;
 }
 
-.navbar-nav a:not(:first-child) {
+.navbar-nav :first-child {
+  color: #e31b6d;
+}
+
+.navbar-nav a {
   color: white;
 }
 
@@ -82,9 +120,10 @@ nav {
   text-decoration: none;
 }
 
-.line-test {
+.about-below-line {
   width: 80px;
   height: 5px;
+  background-color: #444649 !important;
 }
 
 .z-index {
@@ -188,6 +227,32 @@ nav {
 
 .h-inherit {
   height: inherit;
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  text-align: center;
+}
+
+.typing-demo {
+  width: 25ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

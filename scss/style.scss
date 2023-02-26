@@ -10,10 +10,23 @@ html {
 }
 body {
   color: v.$text-color-white;
+  font-family: v.$font-family-base;
 }
 .container-custom {
   width: 80%;
   margin: auto;
+}
+.Heading-base {
+  font-size: v.$heading-size-base !important;
+}
+
+.Heading-small {
+  font-size: v.$heading-size-small !important;
+  color: v.$heading-small-color !important;
+}
+.p-heading-size {
+  font-size: v.$heading-paragraph !important;
+  color: v.$heading-paragraph-color !important;
 }
 h1,
 span,
@@ -42,6 +55,25 @@ blockquote {
   transform: rotate(90deg);
 }
 
+// nav bar close code here
+.navbar {
+  /*   z-index should be above .close-navbar-toggler */
+  z-index: 2;
+}
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+// nav bar close code end here
+
 .nav-bg {
   background-color: v.$background-color-theme;
   height: 80px;
@@ -51,7 +83,10 @@ nav {
   background-color: v.$background-dark;
 }
 
-.navbar-nav a:not(:first-child) {
+.navbar-nav :first-child {
+  color: v.$text-color-theme;
+}
+.navbar-nav a {
   color: v.$text-color-white;
 }
 .navbar-nav a:hover {
@@ -74,9 +109,10 @@ nav {
 .navbar-toggler {
   text-decoration: none;
 }
-.line-test {
+.about-below-line {
   width: 80px;
   height: 5px;
+  background-color: v.$heading-small-color !important;
 }
 
 .z-index {
@@ -166,4 +202,33 @@ nav {
 }
 .h-inherit {
   height: inherit;
+}
+
+//typing testing
+.wrapper {
+  // height: 100vh;
+  /*This part is important for centering*/
+  // display: grid;
+  text-align: center;
+}
+.typing-demo {
+  width: 25ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
 }

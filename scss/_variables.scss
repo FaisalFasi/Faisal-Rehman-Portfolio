@@ -1,13 +1,14 @@
 // *font settings
-$font-family-base: "Roboto", sans-serif;
+$font-family-base: "Raleway", sans-serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-size-small: 14px;
 $font-size-base: 16px;
 $font-size-medium: 18px;
-$heading-size-small: 24px;
-$heading-size-base: 36px;
+$heading-size-small: 30px;
+$heading-size-base: 32pt;
+$heading-paragraph: 18pt;
 $line-height-base: 1.5;
 $line-height-small: 1.25;
 
@@ -32,6 +33,9 @@ $light-background: #ffd8d8;
 $light-text: #282525;
 $dark-background: #282525;
 $dark-text: #ffd8d8;
+
+$heading-small-color: #444649;
+$heading-paragraph-color: #616161;
 
 $text-color-theme: #e31b6d;
 $text-color-black: black;
