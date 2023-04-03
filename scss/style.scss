@@ -87,12 +87,19 @@ nav {
   color: v.$text-color-theme;
 }
 .navbar-nav a {
-  color: v.$text-color-white;
+  color: v.$text-color-white !important;
 }
 .navbar-nav a:hover {
   color: v.$text-color-theme;
 }
+.navbar-nav a:visited:focus {
+  color: v.$text-color-white !important;
+}
+// .navbar-nav .nav-link:hover {
+//   color: white !important;
 
+// --bs-nav-link-hover-color
+// }
 .navbar .navbar-toggler {
   border-color: transparent !important;
 }
