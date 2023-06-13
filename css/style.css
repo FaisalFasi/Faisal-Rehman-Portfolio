@@ -89,15 +89,19 @@ nav {
 }
 
 .navbar-nav :first-child {
-  color: #e31b6d;
+  color: #e31b6d !important;
 }
 
-.navbar-nav a {
-  color: white;
+.navbar-nav :first-child:hover {
+  color: white !important;
 }
 
-.navbar-nav a:hover {
-  color: #e31b6d;
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #e31b6d !important;
 }
 
 .navbar .navbar-toggler {

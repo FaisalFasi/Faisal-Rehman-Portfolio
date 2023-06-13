@@ -84,22 +84,19 @@ nav {
 }
 
 .navbar-nav :first-child {
-  color: v.$text-color-theme;
+  color: v.$text-color-theme !important;
 }
-.navbar-nav a {
+.navbar-nav :first-child:hover {
   color: v.$text-color-white !important;
 }
-.navbar-nav a:hover {
-  color: v.$text-color-theme;
-}
-.navbar-nav a:visited:focus {
-  color: v.$text-color-white !important;
-}
-// .navbar-nav .nav-link:hover {
-//   color: white !important;
 
-// --bs-nav-link-hover-color
-// }
+.nav-link {
+  color: v.$text-color-white !important;
+}
+.nav-link:hover {
+  color: v.$text-color-theme !important;
+}
+
 .navbar .navbar-toggler {
   border-color: transparent !important;
 }
